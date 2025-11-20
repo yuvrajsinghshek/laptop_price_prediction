@@ -1,23 +1,31 @@
 # Laptop Price Prediction
 
-A machine learning project that predicts laptop prices based on their technical specifications.
-This project includes complete data cleaning, feature engineering, model training, and a Streamlit-based interactive interface that allows users to predict prices by selecting specifications from dropdown menus.
+This project predicts laptop prices using machine learning based on key hardware specifications.
+It includes a clean dataset, preprocessing pipeline, trained ML model, and an interactive Streamlit application.
 
 ## Project Overview
 
-This project aims to build a supervised machine learning model that accurately estimates laptop prices using key features such as:
+The aim is to build a model that can estimate laptop prices using features such as:
 
-Company,
-Type,
-Processor Series,
-RAM,
-Storage,
-GPU,
-Operating System,
-Display Features,
+Company
+
+Type
+
+Processor brand & series
+
+RAM
+
+Storage (SSD/HDD)
+
+GPU brand & type
+
+Operating System
+
+Display PPI
+
 Weight
 
-The Streamlit web application provides an intuitive interface for users to select specifications and instantly view predicted laptop prices.
+The Streamlit app provides dropdown-based selection for every feature and predicts the price instantly.
 
 ## Project Structure
 
@@ -25,7 +33,28 @@ laptop-price-prediction/
 │
 ├── clean_data.csv
 ├── notebook.ipynb
+├── streamlit_app.py
+├── requirements.txt
+└── README.md
+
+
+⚠️ Note: model.pkl is not included in the repository due to GitHub’s 25MB upload limit.
+
+## Download Trained Model
+
+The trained model is stored on Google Drive.
+Download it and place the file in the project root folder.
+
+## Download model.pkl:
+https://drive.google.com/file/d/1wfhZ71XTtWbaq_FxvVp09SCu-oh3RiEM/view?usp=sharing
+
+After downloading, the project structure should look like this:
+
+laptop-price-prediction/
+│
 ├── model.pkl
+├── clean_data.csv
+├── notebook.ipynb
 ├── streamlit_app.py
 ├── requirements.txt
 └── README.md
@@ -43,38 +72,26 @@ Scikit-learn
 Streamlit
 
 ## How to Run the Project
-1️⃣ Clone the Repository
+1️⃣ Clone the repository
 git clone https://github.com/yourusername/laptop-price-prediction.git
 
-2️⃣ Install Dependencies
+2️⃣ Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Streamlit Application
+3️⃣ Run the Streamlit app
 streamlit run streamlit_app.py
 
 ## Model Details
 
-Dataset cleaned and preprocessed
+Dataset cleaned & processed
 
 Categorical features encoded
 
-Train-test split applied
+Train-test split used
 
-Best-performing model selected (RandomForest or chosen model)
+Best model trained (Random Forest or chosen algorithm)
 
-Model saved as model.pkl using pickle
-
-## Key Features
-
-✔ Clean and well-processed dataset
-
-✔ Accurate ML model for price prediction
-
-✔ User-friendly Streamlit interface
-
-✔ Dropdown-based selection for each laptop specification
-
-✔ Production-ready and fully deployable
+Model saved as model.pkl (Download link provided above)
 
 ## Author
 
